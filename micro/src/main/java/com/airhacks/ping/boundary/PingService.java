@@ -19,7 +19,7 @@ public class PingService {
     NumberService numberService;
     
     public String getMessage() {
-        return "PingService - " + numberService.getNumber();
+        return "PingService ----- - " + numberService.getNumber();
     }
             
            
