@@ -18,8 +18,11 @@ public class PingService {
     @Inject
     NumberService numberService;
     
+    @Inject
+    String prefix;
+    
     public String getMessage() {
-        return "PingService ----- - " + numberService.getNumber();
+        return this.prefix + " PingService ----- - " + numberService.getNumber();
     }
             
            
